@@ -1,5 +1,12 @@
 -- Use the database specified as an argument
 USE alx_book_store;
 
--- List all tables in the database
-SHOW TABLES;
+-- Query to get the full description of the Books table
+SELECT 
+    COLUMN_NAME, 
+    COLUMN_TYPE 
+FROM 
+    INFORMATION_SCHEMA.COLUMNS 
+WHERE 
+    TABLE_SCHEMA = 'alx_book_store' 
+    AND TABLE_NAME = 'Books';
