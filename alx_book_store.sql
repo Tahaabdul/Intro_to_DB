@@ -1,6 +1,6 @@
 -- SQL script to create a database schema for a bookstore application
--- Create the database
-CREATE DATABASE alx_book_store;
+-- Create the database, but only if it does not already exist.
+CREATE DATABASE IF NOT EXISTS alx_book_store;
 
 -- Use the newly created database
 USE alx_book_store;
